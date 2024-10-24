@@ -33,13 +33,13 @@ public class LightningController : MonoBehaviour
         if (r == 0)
         {
             lightningOne.SetActive(true);
-            Invoke("EndLightning", 0.125f);
+            Invoke("EndLightning", 0.325f);
             Invoke("CallThunder", 0.395f);
         }
         else if (r == 1)
         {
             lightningTwo.SetActive(true);
-            Invoke("EndLightning", 0.105f);
+            Invoke("EndLightning", 0.205f);
             Invoke("CallThunder", 0.175f);
         }
         else
