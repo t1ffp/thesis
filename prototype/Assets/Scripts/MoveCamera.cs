@@ -17,6 +17,7 @@ public class MoveCamera : MonoBehaviour
 
     public GameObject heySprite;
     public GameObject interactText;
+    public GameObject exitText;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -45,6 +46,14 @@ public class MoveCamera : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+         if (other.CompareTag("Player"))
+        {
+            interactText.SetActive(false);
+        }
+        
+    }
 
     private IEnumerator SwitchCameras()
     {
@@ -84,9 +93,19 @@ public class MoveCamera : MonoBehaviour
     private void Update()
     {
 
-        if (isTargetCameraActive && Input.GetKeyDown(KeyCode.E))
+        if (isTargetCameraActive)
         {
-            ReturnToPlayerCamera();
+            exitText.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                exitText.SetActive(false);
+                ReturnToPlayerCamera();
+            }
+        }
+        else
+        {
+            exitText.SetActive(false);
         }
     }
 

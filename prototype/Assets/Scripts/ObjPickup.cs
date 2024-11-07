@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class ObjPickup : MonoBehaviour
 {
-    public float pickupRange = 3.0f; // Range for picking up objects
-    public Transform holdParent; // Parent object where the picked object will be held
-    private GameObject heldObject; // The currently held object
+    public float pickupRange = 2.0f;
+    public Transform holdParent;
+    private GameObject heldObject;
+    public GameObject pickUpTxt;
+
+
+    private void Start()
+    {
+        pickUpTxt.SetActive(false);
+    }
 
     private void Update()
     {
+        Ray ray = new Ray(transform.position, transform.forward);
+        RaycastHit hit;
+
+        //Debug.DrawRay(ray.origin, ray.direction * pickupRange, Color.red, 1.0f);
+
+        // Perform the raycast
+        if (Physics.Raycast(ray, out hit, pickupRange))
+        {
+            // Check if the object is pickable (tag or component check)
+            if (hit.collider.CompareTag("Pickable"))
+            {
+                pickUpTxt.SetActive(true);
+            }
+            else
+            {
+                pickUpTxt.SetActive(false);
+            }
+        }
+
         if (Input.GetMouseButtonDown(0)) // Mouse button pressed
         {
             TryPickup();
+            pickUpTxt.SetActive(false);
         }
         else if (Input.GetMouseButtonUp(0)) // Mouse button released
         {
@@ -26,8 +53,7 @@ public class ObjPickup : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        // Draw the ray for debugging purposes
-        Debug.DrawRay(ray.origin, ray.direction * pickupRange, Color.red, 1.0f);
+        //Debug.DrawRay(ray.origin, ray.direction * pickupRange, Color.red, 1.0f);
 
         // Perform the raycast
         if (Physics.Raycast(ray, out hit, pickupRange))
@@ -40,7 +66,7 @@ public class ObjPickup : MonoBehaviour
         }
         else
         {
-            Debug.Log("No object detected within range.");
+            //Debug.Log("No object detected within range.");
         }
     }
 
