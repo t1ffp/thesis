@@ -21,7 +21,6 @@ public class SpotlightDetection : MonoBehaviour
     {
         if (IsPlayerInSpotlight())
         {
-            //Debug.Log("Player is in the spotlight!");
             towerAnim.speed = 0f;
 
             if(!heartBeat.isPlaying && !beeping.isPlaying)
@@ -42,7 +41,6 @@ public class SpotlightDetection : MonoBehaviour
 
     bool IsPlayerInSpotlight()
     {
-        // Get spotlight properties
         Vector3 lightPosition = spotlight.transform.position;
         Vector3 lightDirection = spotlight.transform.forward;
         float spotAngle = spotlight.spotAngle;
