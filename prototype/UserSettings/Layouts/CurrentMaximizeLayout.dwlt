@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1360
+  controlID: 38
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 1361
+  controlID: 39
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 1362
+  controlID: 40
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,9 +238,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aee20000
-      m_LastClickedID: 58030
-      m_ExpandedIDs: 9c44feffc246feffbee3000008e40000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3442fefff044feffc246feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -605,7 +605,7 @@ MonoBehaviour:
       collapsed: 1
       displayed: 1
       snapOffset: {x: 823, y: 438.5}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: -2.5, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
       index: 2
@@ -636,9 +636,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 905, y: 4.302826, z: 0}
+    m_Target: {x: 408.47345, y: 4.3027954, z: 241.5393}
     speed: 2
-    m_Value: {x: 905, y: 4.3028255, z: 0}
+    m_Value: {x: 408.47345, y: 4.3027954, z: 241.5393}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -684,13 +684,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.022678595, y: 0.94921905, z: -0.31061566, w: -0.05632056}
+    m_Target: {x: -0.12425307, y: 0.87701994, z: -0.28558287, w: -0.3674574}
     speed: 2
-    m_Value: {x: -0.022678595, y: 0.949219, z: -0.31061566, w: -0.05632056}
+    m_Value: {x: -0.12375124, y: 0.8770505, z: -0.2855997, w: -0.36592463}
   m_Size:
-    m_Target: 682.63763
+    m_Target: 516.4261
     speed: 2
-    m_Value: 665.17676
+    m_Value: 512.96356
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -914,7 +914,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -922,15 +922,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/tiff/Documents/GitHub/thesis/prototype
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 134.00024}
-    m_SelectedIDs: aa060000
-    m_LastClickedID: 1706
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 7a060000
+    m_LastClickedID: 1658
     m_ExpandedIDs: 000000000206000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000206000000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -984,9 +984,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: aee20000
-    m_LastClickedInstanceID: 58030
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000000000006cfd00008271000020e50000a00901008c810000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 136, y: 29}
+  m_MinSize: {x: 129, y: 28}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
@@ -1121,7 +1121,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 58262
+  m_LastSelectedObjectID: 58030
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
