@@ -1,30 +1,23 @@
-Unity Editor version:    2022.3.4f1 (35713cd46cd7)
-Branch:                  2022.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 11.5.1 (Build 20G80)
-Darwin version:          20.6.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        8192 MB
 Using pre-set license
-Pro License: YES
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 31911 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-/Users/tiff/Documents/GitHub/thesis/prototype
+C:/Users/tiffa/Documents/GitHub/thesis/prototype
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-65078
-Successfully changed project path to: /Users/tiff/Documents/GitHub/thesis/prototype
-/Users/tiff/Documents/GitHub/thesis/prototype
+58621
+Successfully changed project path to: C:/Users/tiffa/Documents/GitHub/thesis/prototype
+C:/Users/tiffa/Documents/GitHub/thesis/prototype
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,67 +49,70 @@ Successfully changed project path to: /Users/tiff/Documents/GitHub/thesis/protot
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4435754304] Host "[IP] 149.31.228.182 [Port] 0 [Flags] 2 [Guid] 1202476399 [EditorId] 1202476399 [Version] 1048832 [Id] OSXEditor(0,tiffs-air.wireless.newschool.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2056] Host "[IP] 192.168.1.196 [Port] 0 [Flags] 2 [Guid] 142963165 [EditorId] 142963165 [Version] 1048832 [Id] WindowsEditor(7,Tiff) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4435754304] Host "[IP] 149.31.228.182 [Port] 0 [Flags] 2 [Guid] 1202476399 [EditorId] 1202476399 [Version] 1048832 [Id] OSXEditor(0,tiffs-air.wireless.newschool.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2056] Host "[IP] 192.168.1.196 [Port] 0 [Flags] 2 [Guid] 142963165 [EditorId] 142963165 [Version] 1048832 [Id] WindowsEditor(7,Tiff) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 11.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/tiff/Documents/GitHub/thesis/prototype/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tiffa/Documents/GitHub/thesis/prototype/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 (high power)
-Metal devices available: 1
-0: Apple M1 (high power)
-Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6800 (ID=0x73bf)
+    Vendor:   ATI
+    VRAM:     16311 MB
+    Driver:   32.0.12033.1030
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.4f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.4f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003514 seconds.
-- Loaded All Assemblies, in  0.284 seconds
+Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll (that doesn't exist). Retrying without overrides.
+Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.006336 seconds.
+- Loaded All Assemblies, in  0.223 seconds
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.175 seconds
-Domain Reload Profiling: 459ms
-	BeginReloadAssembly (91ms)
+- Finished resetting the current domain, in  0.164 seconds
+Domain Reload Profiling: 386ms
+	BeginReloadAssembly (55ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (112ms)
-		LoadAssemblies (91ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (92ms)
+		LoadAssemblies (54ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (108ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (98ms)
+		AnalyzeDomain (88ms)
+			TypeCache.Refresh (87ms)
+				TypeCache.ScanAssembly (79ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (175ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (164ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (133ms)
+		SetupLoadedEditorAssemblies (129ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,167 +120,220 @@ Domain Reload Profiling: 459ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/tiff/Documents/GitHub/thesis/prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/tiff/Documents/GitHub/thesis/prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.667 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\tiffa\Documents\GitHub\thesis\prototype\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\tiffa\Documents\GitHub\thesis\prototype\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.472 seconds
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.470 seconds
-Domain Reload Profiling: 1141ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.531 seconds
+Domain Reload Profiling: 1002ms
+	BeginReloadAssembly (77ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (503ms)
-		LoadAssemblies (285ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (169ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (246ms)
-			TypeCache.Refresh (224ms)
-				TypeCache.ScanAssembly (215ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (470ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (173ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (532ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (351ms)
+		SetupLoadedEditorAssemblies (413ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (288ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.12 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5637 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 97 unused Assets / (1.7 MB). Loaded Objects now: 6096.
-Memory consumption went from 383.3 MB to 381.6 MB.
-Total: 7.015084 ms (FindLiveObjects: 0.243792 ms CreateObjectMapping: 0.076708 ms MarkObjects: 6.265375 ms  DeleteObjects: 0.428625 ms)
+Unloading 94 unused Assets / (1.6 MB). Loaded Objects now: 6099.
+Memory consumption went from 237.5 MB to 235.9 MB.
+Total: 3.402300 ms (FindLiveObjects: 0.448200 ms CreateObjectMapping: 0.202200 ms MarkObjects: 2.379300 ms  DeleteObjects: 0.372100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 41455.700965 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Large.prefab
-  artifactKey: Guid(98a359d63c95b74479b90b53b0631766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Large.prefab using Guid(98a359d63c95b74479b90b53b0631766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc8f47b0972f851f935d5e9f9111045') in 0.012408 seconds
+  Time since last request: 335753.535908 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9ed3c4cc2bcc5f07d20d853f149372') in 0.005839 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4.prefab
-  artifactKey: Guid(84d3236b8e04fd042b4f2e14744e2af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4.prefab using Guid(84d3236b8e04fd042b4f2e14744e2af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bab0b83625ac89525952f3abd56841') in 0.001311 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Rock Group.prefab
-  artifactKey: Guid(f2ea49d0a51aea045a19d9ba5770c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Rock Group.prefab using Guid(f2ea49d0a51aea045a19d9ba5770c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba95f25870e3e8a017eed45608552b3') in 0.006210 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Tree 2.prefab
-  artifactKey: Guid(2d813655b782eef45b7188afa2dfdb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Tree 2.prefab using Guid(2d813655b782eef45b7188afa2dfdb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5697b23372154c23310f8ab4c55fb14') in 0.002646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Small.prefab
-  artifactKey: Guid(975ca1de1ebfe964491f7f9df16a60be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Small.prefab using Guid(975ca1de1ebfe964491f7f9df16a60be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944b2368ace161dc873f3187b25cd58a') in 0.004072 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Large Rock 2.prefab
-  artifactKey: Guid(e5c358a373d2fa840a2b94c42d8966af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Large Rock 2.prefab using Guid(e5c358a373d2fa840a2b94c42d8966af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f49f06cc132bde2e5fb950f40a7de7') in 0.002257 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000565 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Tree 4.prefab
-  artifactKey: Guid(a73e9680647acdd40b863c4b6d3982b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Tree 4.prefab using Guid(a73e9680647acdd40b863c4b6d3982b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2896049e5b494ab7dcc43507463b386') in 0.002794 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/JP Environmental Asset Pack/Prefabs/Small Rock 1.prefab
-  artifactKey: Guid(375204e43ad118e4bbc83b27192e3946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JP Environmental Asset Pack/Prefabs/Small Rock 1.prefab using Guid(375204e43ad118e4bbc83b27192e3946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a3595120a197fff20cbd5223e52719') in 0.002671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 6.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (1.6 MB). Loaded Objects now: 6097.
-Memory consumption went from 257.4 MB to 255.7 MB.
-Total: 23.093584 ms (FindLiveObjects: 0.252416 ms CreateObjectMapping: 0.076459 ms MarkObjects: 22.424709 ms  DeleteObjects: 0.339667 ms)
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (1.6 MB). Loaded Objects now: 6100.
+Memory consumption went from 111.3 MB to 109.7 MB.
+Total: 3.183500 ms (FindLiveObjects: 0.351100 ms CreateObjectMapping: 0.180100 ms MarkObjects: 2.267600 ms  DeleteObjects: 0.384400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 296.541674 seconds.
-  path: Assets/Mats/Enemy.mat
-  artifactKey: Guid(dbef924e94b1be94caddabced74f3cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mats/Enemy.mat using Guid(dbef924e94b1be94caddabced74f3cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb8140e621d54f421a3a688f3555705') in 0.004028 seconds
+  Time since last request: 3520.865965 seconds.
+  path: Assets/Sprites/blueTie.png
+  artifactKey: Guid(0862ebf919a4e8644867cff56fd3a4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/blueTie.png using Guid(0862ebf919a4e8644867cff56fd3a4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828848bf8c6a242c3323f7b02167ca48') in 0.006389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/Hey.png
+  artifactKey: Guid(324cbe29f10d0854d821b197cee11715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hey.png using Guid(324cbe29f10d0854d821b197cee11715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14481b30ba6ca0085431f5f535ae726') in 0.001036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.682951 seconds.
+  path: Assets/Terrain/New Terrain 1.asset
+  artifactKey: Guid(5e8fe9347885a9942b94547fbe90eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/New Terrain 1.asset using Guid(5e8fe9347885a9942b94547fbe90eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Tree 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Tree 3 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Tree 4 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: 'ab883a353ff164fa1f631b1f793cfd0b') in 0.093742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 11.201498 seconds.
+  path: Assets/JP Environmental Asset Pack/Textures/Tree 4/Dead Tree 4 RFS_Tree 2 Mat_MetallicSmoothness.png
+  artifactKey: Guid(0aa75cec7b722b14a8479c7596a5b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Textures/Tree 4/Dead Tree 4 RFS_Tree 2 Mat_MetallicSmoothness.png using Guid(0aa75cec7b722b14a8479c7596a5b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7a5e93a73bd6719df57adb3f8cdd80') in 0.025839 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 1.839801 seconds.
-  path: Assets/Mats/Wall.mat
-  artifactKey: Guid(44c8515d3381b0d44a23d50205152fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mats/Wall.mat using Guid(44c8515d3381b0d44a23d50205152fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f9b3886220cb5de91478914c4199d9') in 0.000977 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/JP Environmental Asset Pack/Textures/Tree 4/Tree 4 Branchs.png
+  artifactKey: Guid(4af512830e4f214418b08610641c1659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Textures/Tree 4/Tree 4 Branchs.png using Guid(4af512830e4f214418b08610641c1659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c63f4694ae085685d3aa0e1b0a6968') in 0.001489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.377285 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Foliage 2.prefab
+  artifactKey: Guid(48877448f3a5a7b42956199437be7a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Foliage 2.prefab using Guid(48877448f3a5a7b42956199437be7a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9136d28b27d075ced5cb1a16e6a9adda') in 0.001125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Large Rock 1.prefab
+  artifactKey: Guid(79d04eb1ecfb2d741a1da8434557a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Large Rock 1.prefab using Guid(79d04eb1ecfb2d741a1da8434557a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba454e64566e33a256b7151dec1724a') in 0.001888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4.prefab
+  artifactKey: Guid(84d3236b8e04fd042b4f2e14744e2af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4.prefab using Guid(84d3236b8e04fd042b4f2e14744e2af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca9121171944cf14cec0e6d1ef01a8c') in 0.001164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Rock Group.prefab
+  artifactKey: Guid(f2ea49d0a51aea045a19d9ba5770c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Rock Group.prefab using Guid(f2ea49d0a51aea045a19d9ba5770c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd9ad5f7f52bb0a8a87ca0a617aae58') in 0.001017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Tree 2.prefab
+  artifactKey: Guid(2d813655b782eef45b7188afa2dfdb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Tree 2.prefab using Guid(2d813655b782eef45b7188afa2dfdb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef7affd258b4d97ed96b1e0467fbb6c') in 0.001105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Small.prefab
+  artifactKey: Guid(975ca1de1ebfe964491f7f9df16a60be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Grass Patch Small.prefab using Guid(975ca1de1ebfe964491f7f9df16a60be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c091518f2f124458a1221ebaa6253323') in 0.002083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Large Rock 2.prefab
+  artifactKey: Guid(e5c358a373d2fa840a2b94c42d8966af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Large Rock 2.prefab using Guid(e5c358a373d2fa840a2b94c42d8966af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e642b9fd00afd631979524e0034fc8') in 0.001011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4 Moss.prefab
+  artifactKey: Guid(cb9055f73b5405f49b5209c9bedd3e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Small Rock 4 Moss.prefab using Guid(cb9055f73b5405f49b5209c9bedd3e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8708768d86b934c90e6dec21905f0755') in 0.001153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/JP Environmental Asset Pack/Prefabs/Tree 1.prefab
+  artifactKey: Guid(81c7dd4128008d84fbd14127f8cdc039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Prefabs/Tree 1.prefab using Guid(81c7dd4128008d84fbd14127f8cdc039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ee3689b1eddd77f2530c4577c5ffe9') in 0.001089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 8.784165 seconds.
+  path: Assets/JP Environmental Asset Pack/Materials/Tree 4/Tree 4 Mat.mat
+  artifactKey: Guid(4c22b5debf7e9384987ca56dd4e8a52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JP Environmental Asset Pack/Materials/Tree 4/Tree 4 Mat.mat using Guid(4c22b5debf7e9384987ca56dd4e8a52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2999d0902c5dc7d7af202ee7eff93fca') in 0.000768 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
