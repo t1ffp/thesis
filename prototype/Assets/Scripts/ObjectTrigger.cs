@@ -19,11 +19,17 @@ public class ObjectTrigger : MonoBehaviour
     private GameObject objectToMove;
     private Rigidbody rb;
 
+    public AudioSource placedSuccess;
+    public AudioClip yaySound;
+
+    //public string objectTag;
+
     private void OnTriggerEnter(Collider other)
     {
        
         if (other.CompareTag("Pickable"))
         {
+            
             objectToMove = other.gameObject;
             rb = objectToMove.GetComponent<Rigidbody>();
 
@@ -33,12 +39,16 @@ public class ObjectTrigger : MonoBehaviour
             isMoving = true;
             timeElapsed = 0f;
 
-
+            if(placedSuccess != null && yaySound != null)
+            {
+                placedSuccess.PlayOneShot(yaySound);
+            }
         }
     }
 
     private void Update()
     {
+
         if (isMoving && objectToMove != null)
         {
             pickUp.GetComponent<ObjPickup>().Drop();
@@ -54,7 +64,8 @@ public class ObjectTrigger : MonoBehaviour
 
             if (t >= 1f)
             {
-                objectToMove.tag = "Untagged";
+                
+                objectToMove.tag = "Placed";
 
                 if (rb != null)
                 {
