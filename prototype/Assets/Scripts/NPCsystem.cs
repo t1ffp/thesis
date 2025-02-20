@@ -2,54 +2,86 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Hertzole.GoldPlayer;
 
 public class NPCsystem : MonoBehaviour
 {
 
     public bool player_detection = false;
     public TextMeshProUGUI DialogueText;
+    public TextMeshProUGUI interactText;
     public string[] Sentences;
     private int Index = 0;
     public float dialogueSpeed;
 
 
     public Animator DialogueAnimator;
-    private bool StartDialogue = true;
+    private bool startDialogue = true;
 
     private bool isTyping = false;
     private Coroutine typingCoroutine;
 
+    public Transform playerCamera;
+    public Transform npcTransform;
 
-    // Update is called once per frame
+    public GameObject player;
+    //private GoldPlayerInput playerInput;
+    public MonoBehaviour playerInput;
+
+
+    private void Start()
+    {
+        interactText.gameObject.SetActive(false);
+        //playerInput = player.GetComponent<GoldPlayerInput>();
+    }
     void Update()
     {
-
-        if (player_detection && Input.GetKeyDown(KeyCode.E))
+        if (player_detection)
         {
-            if (StartDialogue)
-            {
-                DialogueAnimator.SetTrigger("Enter");
-                StartDialogue = false;
+            bool isLooking = LookAt();
 
-                NextSentence();
-            }
-            else
+            interactText.gameObject.SetActive(isLooking);
+
+            if (isLooking && Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
-                if (isTyping)
+                if (startDialogue)
                 {
-                    StopCoroutine(typingCoroutine);
-                    DialogueText.text = Sentences[Index];
-                    isTyping = false;
-                    Index++;
+                    StartDialogue();
                 }
                 else
                 {
-                    NextSentence();
+                    if (isTyping)
+                    {
+                        StopCoroutine(typingCoroutine);
+                        DialogueText.text = Sentences[Index];
+                        isTyping = false;
+                        Index++;
+                    }
+                    else
+                    {
+                        NextSentence();
+                    }
                 }
             }
+        }
+      
+    }
 
+    bool LookAt()
+    {
+
+        Ray ray = new Ray(playerCamera.position, playerCamera.forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.transform == npcTransform)
+            {
+                return true;
+            }
         }
 
+        return false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -63,7 +95,24 @@ public class NPCsystem : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         player_detection = false;
-        //DialogueAnimator.SetTrigger("Exit");
+        interactText.gameObject.SetActive(false);
+    }
+
+    void StartDialogue()
+    {
+        DialogueAnimator.SetTrigger("Enter");
+        startDialogue = false;
+        LockPlayer(true);
+        NextSentence();
+    }
+
+    void EndDialogue()
+    {
+        DialogueText.text = "";
+        DialogueAnimator.SetTrigger("Exit");
+        Index = 0;
+        startDialogue = true;
+        LockPlayer(false);
     }
 
     void NextSentence()
@@ -75,11 +124,8 @@ public class NPCsystem : MonoBehaviour
         }
         else
         {
-            DialogueText.text = "";
-            DialogueAnimator.SetTrigger("Exit");
-            Index = 0;
-            StartDialogue = true;
-            
+            EndDialogue();
+
         }
     }
 
@@ -98,5 +144,12 @@ public class NPCsystem : MonoBehaviour
         isTyping = false;
         Index++;
     }
-    
+
+    void LockPlayer(bool lockState)
+    {
+        if(playerInput != null)
+        {
+            playerInput.enabled = !lockState;
+        }
+    }
 }

@@ -20,12 +20,9 @@ public class ObjPickup : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        //Debug.DrawRay(ray.origin, ray.direction * pickupRange, Color.red, 1.0f);
 
-        // Perform the raycast
         if (Physics.Raycast(ray, out hit, pickupRange))
         {
-            // Check if the object is pickable (tag or component check)
             if (hit.collider.CompareTag("Pickable"))
             {
                 pickUpTxt.SetActive(true);
@@ -36,12 +33,12 @@ public class ObjPickup : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0)) // Mouse button pressed
+        if (Input.GetMouseButtonDown(0))
         {
             TryPickup();
             pickUpTxt.SetActive(false);
         }
-        else if (Input.GetMouseButtonUp(0)) // Mouse button released
+        else if (Input.GetMouseButtonUp(0))
         {
             Drop();
         }
@@ -49,25 +46,18 @@ public class ObjPickup : MonoBehaviour
 
     private void TryPickup()
     {
-        // Create a ray from the player's position in the direction they are facing
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        //Debug.DrawRay(ray.origin, ray.direction * pickupRange, Color.red, 1.0f);
 
-        // Perform the raycast
         if (Physics.Raycast(ray, out hit, pickupRange))
         {
-            // Check if the object is pickable (tag or component check)
             if (hit.collider.CompareTag("Pickable"))
             {
                 Pickup(hit.collider.gameObject);
             }
         }
-        else
-        {
-            //Debug.Log("No object detected within range.");
-        }
+
     }
 
     private void Pickup(GameObject obj)
@@ -80,13 +70,12 @@ public class ObjPickup : MonoBehaviour
             rb.isKinematic = true;
         }
 
-        heldObject.transform.SetParent(holdParent); // Parent it to the hold object
-        heldObject.GetComponent<Collider>().enabled = false; // Disable collider to avoid physics issues
-        heldObject.transform.localPosition = Vector3.zero; // Reset position to center of parent
-        heldObject.transform.localRotation = Quaternion.identity; // Reset rotation
+        heldObject.transform.SetParent(holdParent);
+        heldObject.GetComponent<Collider>().enabled = false;
+        heldObject.transform.localPosition = Vector3.zero;
     }
 
-    private void Drop()
+    public void Drop()
     {
         if (heldObject != null)
         {
