@@ -40,6 +40,7 @@ public class NPCsystem : MonoBehaviour
                     StopCoroutine(typingCoroutine);
                     DialogueText.text = Sentences[Index];
                     isTyping = false;
+                    Index++;
                 }
                 else
                 {
