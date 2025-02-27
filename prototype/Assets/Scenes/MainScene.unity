@@ -15232,7 +15232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &657223400
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43867,7 +43867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69217aa491a6946b686f0639c2de7038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: 
+  targetTag: Placed
   waterSound: {fileID: 8300000, guid: bf2f04dead695452e935b32f0d197298, type: 3}
   fountain: {fileID: 1825540021}
   water: {fileID: 1133432535}
