@@ -8,6 +8,10 @@ TagManager:
   - Pickable
   - Red
   - Placed
+  - Text
+  - Light
+  - Start
+  - Exit
   layers:
   - Default
   - TransparentFX
