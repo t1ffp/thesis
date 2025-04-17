@@ -109,6 +109,69 @@ MonoBehaviour:
   - {fileID: -7011558710299706105}
   - {fileID: 8145720042913671927}
   - {fileID: -45749522320819384}
+  - {fileID: 839986268247412429}
+  - {fileID: 2667371972904521973}
+--- !u!114 &839986268247412429
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a074ec59f6e910b4e8c49f57e56cf95a, type: 3}
+  m_Name: VolumetricFogVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  distance:
+    m_OverrideState: 0
+    m_Value: 64
+  baseHeight:
+    m_OverrideState: 1
+    m_Value: 0
+  maximumHeight:
+    m_OverrideState: 1
+    m_Value: 50
+  enableGround:
+    m_OverrideState: 1
+    m_Value: 0
+  groundHeight:
+    m_OverrideState: 0
+    m_Value: 0
+  density:
+    m_OverrideState: 0
+    m_Value: 0.2
+  attenuationDistance:
+    m_OverrideState: 0
+    m_Value: 128
+  enableMainLightContribution:
+    m_OverrideState: 1
+    m_Value: 0
+  anisotropy:
+    m_OverrideState: 0
+    m_Value: 0.4
+  scattering:
+    m_OverrideState: 0
+    m_Value: 0.15
+  tint:
+    m_OverrideState: 1
+    m_Value: {r: 0.740566, g: 0.8473606, b: 1, a: 1}
+  enableAdditionalLightsContribution:
+    m_OverrideState: 1
+    m_Value: 0
+  maxSteps:
+    m_OverrideState: 0
+    m_Value: 128
+  blurIterations:
+    m_OverrideState: 0
+    m_Value: 2
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  renderPassEvent:
+    m_OverrideState: 0
+    m_Value: 550
 --- !u!114 &849379129802519247
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -149,6 +212,158 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
+--- !u!114 &2667371972904521973
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840cc048a5aa61d4cbc01d6073ffb0a0, type: 3}
+  m_Name: BetterFogVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  _FogIntensity:
+    m_OverrideState: 1
+    m_Value: 0.565
+  _EnergyLoss:
+    m_OverrideState: 1
+    m_Value: 0
+  _UseGradient:
+    m_OverrideState: 1
+    m_Value: 0
+  _FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  _GradientStart:
+    m_OverrideState: 1
+    m_Value: 0
+  _GradientEnd:
+    m_OverrideState: 1
+    m_Value: 2000
+  _GradientTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+    dimension: 1
+    LerpValue: 0
+    FromTexture: {fileID: 0}
+  _UseSunLight:
+    m_OverrideState: 0
+    m_Value: 0
+  _SunColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.5409836, b: 0, a: 1}
+  _SunIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  _SunPower:
+    m_OverrideState: 1
+    m_Value: 0.18
+  _UseDistanceFog:
+    m_OverrideState: 1
+    m_Value: 1
+  _UseRadialDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  _FogType:
+    m_OverrideState: 1
+    m_Value: 3
+  _DistanceFogOffset:
+    m_OverrideState: 1
+    m_Value: 0
+  _SceneStart:
+    m_OverrideState: 1
+    m_Value: 10
+  _SceneEnd:
+    m_OverrideState: 1
+    m_Value: 100
+  _FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.0064
+  _UseSkyboxHeightFog:
+    m_OverrideState: 1
+    m_Value: 1
+  _SkyboxFogOffset:
+    m_OverrideState: 1
+    m_Value: 0.0009
+  _SkyboxFogHardness:
+    m_OverrideState: 1
+    m_Value: 0.761
+  _SkyboxFogIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  _SkyboxFill:
+    m_OverrideState: 1
+    m_Value: 0.5
+  _UseHeightFog:
+    m_OverrideState: 1
+    m_Value: 1
+  _Height:
+    m_OverrideState: 1
+    m_Value: 20.6
+  _HeightDensity:
+    m_OverrideState: 1
+    m_Value: 0.15
+  _HeightFogType:
+    m_OverrideState: 1
+    m_Value: 2
+  _UseNoise:
+    m_OverrideState: 1
+    m_Value: 0
+  _NoiseAffect:
+    m_OverrideState: 1
+    m_Value: 0
+  _NoiseIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  _NoiseDistanceEnd:
+    m_OverrideState: 1
+    m_Value: 500
+  _NoiseEndHardness:
+    m_OverrideState: 1
+    m_Value: 1
+  _Scale1:
+    m_OverrideState: 1
+    m_Value: 140
+  _Lerp1:
+    m_OverrideState: 1
+    m_Value: 0.946
+  _NoiseSpeed1:
+    m_OverrideState: 1
+    m_Value: {x: 2, y: 1, z: 0}
+  _NoiseTimeScale1:
+    m_OverrideState: 1
+    m_Value: 0.151
+  _UseSSMS:
+    m_OverrideState: 1
+    m_Value: 1
+  _Threshold:
+    m_OverrideState: 1
+    m_Value: 0
+  _SoftKnee:
+    m_OverrideState: 1
+    m_Value: 0.5
+  _Radius:
+    m_OverrideState: 1
+    m_Value: 7
+  _BlurWeight:
+    m_OverrideState: 1
+    m_Value: 1
+  _Intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  _HighQuality:
+    m_OverrideState: 1
+    m_Value: 1
+  _AntiFlicker:
+    m_OverrideState: 1
+    m_Value: 1
+  _FadeRamp:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: fb7f8a612167c1044a99d1f906499de3, type: 3}
+    dimension: 1
 --- !u!114 &8145720042913671927
 MonoBehaviour:
   m_ObjectHideFlags: 3
