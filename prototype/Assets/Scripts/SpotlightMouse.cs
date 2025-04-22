@@ -8,6 +8,12 @@ public class SpotlightMouse : MonoBehaviour
     public float spotlightHeight = 10f;
     public LayerMask groundMask;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     void Update()
     {
         Ray ray = sideCamera.ScreenPointToRay(Input.mousePosition);

@@ -13,6 +13,8 @@ public class CountObjects : MonoBehaviour
 
     public GameObject water;
 
+    public GameObject endText;
+
     private void Start()
     {
         water.SetActive(false);
@@ -40,6 +42,7 @@ public class CountObjects : MonoBehaviour
            
             fountain.PlayOneShot(waterSound);
             water.SetActive(true);
+            endText.SetActive(true);
         }
     }
 }
