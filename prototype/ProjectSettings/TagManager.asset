@@ -12,6 +12,7 @@ TagManager:
   - Light
   - Start
   - Exit
+  - Trapdoor
   layers:
   - Default
   - TransparentFX

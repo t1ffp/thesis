@@ -28,6 +28,8 @@ public class NPCsystem : MonoBehaviour
     //private GoldPlayerInput playerInput;
     public MonoBehaviour playerInput;
 
+    private bool canSkip = true;
+    private float skipCooldown = 0.5f;
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class NPCsystem : MonoBehaviour
 
             interactText.gameObject.SetActive(isLooking);
 
-            if (isLooking && Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+            if (isLooking && canSkip && Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
                 if (startDialogue)
                 {
@@ -121,12 +123,20 @@ public class NPCsystem : MonoBehaviour
         {
             DialogueText.text = "";
             typingCoroutine = StartCoroutine(WriteSentence(Sentences[Index]));
+            
+            canSkip = false;
+            Invoke(nameof(ResetSkip), skipCooldown);
         }
         else
         {
             EndDialogue();
 
         }
+    }
+
+    void ResetSkip()
+    {
+        canSkip = true;
     }
 
     IEnumerator WriteSentence(string sentence)
