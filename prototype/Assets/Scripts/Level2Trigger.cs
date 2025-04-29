@@ -14,44 +14,40 @@ public class Level2Trigger : MonoBehaviour
     public Transform teleportLocation;
     public Transform playerPos;
 
+    public Transform playerCamera;
+
 
    private void OnTriggerStay(Collider other)
    {
-       if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+
+       if (other.CompareTag("Player"))
        {
-           interactTxt.SetActive(true);
-           other.GetComponent<CharacterController>().enabled = false;
-           playerPos.position = teleportLocation.position;
-           other.GetComponent<CharacterController>().enabled = true;
-        }
+            Ray ray = new Ray(playerCamera.position, playerCamera.forward);
 
-   }
-
-  
-
-    /**
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player") || other.CompareTag("MainCamera"))
+            if (Physics.Raycast(ray, out RaycastHit hit, 50f))
             {
                 interactTxt.SetActive(true);
                 isLooking = true;
             }
             else
             {
-                //interactTxt.SetActive(false);
+                interactTxt.SetActive(false);
                 //isLooking = false;
             }
-        }
-
-      
-
-        private void Update()
-        {
-            if (isLooking && Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && isLooking)
             {
+                other.GetComponent<CharacterController>().enabled = false;
                 playerPos.position = teleportLocation.position;
+                other.GetComponent<CharacterController>().enabled = true;
+                interactTxt.SetActive(false);
             }
         }
-    **/
+   }
+
+    private void OnTriggerExit(Collider other)
+    {
+        interactTxt.SetActive(false);
+        isLooking = false;
+    }
+
 }

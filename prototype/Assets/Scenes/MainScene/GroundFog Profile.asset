@@ -29,10 +29,10 @@ MonoBehaviour:
   active: 1
   _FogIntensity:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.025
   _EnergyLoss:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.082
   _UseGradient:
     m_OverrideState: 1
     m_Value: 0

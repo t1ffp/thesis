@@ -13,11 +13,21 @@ public class CountObjects : MonoBehaviour
 
     public GameObject water;
 
-    public GameObject endText;
+    public GameObject suitDialogue1;
+    public GameObject suitDialogue2;
+    public GameObject coinDialogue1;
+    public GameObject coinDialogue2;
+
+    public GameObject door;
+
+    //public GameObject endText;
 
     private void Start()
     {
         water.SetActive(false);
+        suitDialogue2.SetActive(false);
+        coinDialogue2.SetActive(false);
+        door.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,7 +52,14 @@ public class CountObjects : MonoBehaviour
            
             fountain.PlayOneShot(waterSound);
             water.SetActive(true);
-            endText.SetActive(true);
+            suitDialogue2.SetActive(true);
+            suitDialogue1.SetActive(false);
+
+            coinDialogue1.SetActive(false);
+            coinDialogue2.SetActive(true);
+
+            door.SetActive(false);
+            //endText.SetActive(true);
         }
     }
 }
