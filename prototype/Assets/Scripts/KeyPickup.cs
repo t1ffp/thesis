@@ -4,37 +4,54 @@ using UnityEngine;
 
 public class KeyPickup : MonoBehaviour
 {
-    public bool canOpen = false;
+    public GameObject interactText;
+    public GameObject pickedUpText;
+    private bool canInteract;
 
-    public GameObject key;
+    public GameObject playerInv;
 
-    public GameObject pickUpText;
-    public GameObject keyText;
-
-    // Update is called once per frame
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            pickUpText.SetActive(true);
+            interactText.SetActive(true);
+            canInteract = true;
 
-            if (Input.GetKey(KeyCode.E))
+            /**
+            PlayerInventory inventory = other.GetComponent<PlayerInventory>();
+            if (inventory != null)
             {
-                gameObject.SetActive(false);
-                pickUpText.SetActive(false);
-                //keyText.SetActive(true);
-                canOpen = true;
+                inventory.hasKey = true;
+                Destroy(gameObject);
             }
+            **/
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            pickUpText.SetActive(false);
-            keyText.SetActive(false);
+            interactText.SetActive(false);
+            canInteract = false;
         }
     }
 
  
+    private void Update()
+    {
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        {
+            PlayerInventory inventory = playerInv.GetComponent<PlayerInventory>();
+            if (inventory != null)
+            {
+                inventory.hasKey = true;
+                Destroy(gameObject);
+            }
+            interactText.SetActive(false);
+            pickedUpText.SetActive(true);
+            canInteract = false;
+        }
+    }
+
 }
