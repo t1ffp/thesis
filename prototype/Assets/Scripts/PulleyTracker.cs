@@ -8,9 +8,11 @@ public class PulleyTracker : MonoBehaviour
 {
     public GameObject chain1;
     public GameObject chain2;
+    public GameObject light;
 
     private Animator animator;
     private Animator chain2anim;
+    private Animator lightAnim;
 
     public GameObject interactText;
     public GameObject noKeyText;
@@ -30,6 +32,7 @@ public class PulleyTracker : MonoBehaviour
     {
         animator = chain1.GetComponent<Animator>();
         chain2anim = chain2.GetComponent<Animator>();
+        lightAnim = light.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,6 +68,7 @@ public class PulleyTracker : MonoBehaviour
             blockedDoor.SetActive(true);
             animator.SetTrigger("Pull");
             chain2anim.SetTrigger("Pull");
+            lightAnim.SetTrigger("Open");
             Destroy(gameObject);
         }
 
