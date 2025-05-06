@@ -10,6 +10,10 @@ public class KeyPickup : MonoBehaviour
 
     public GameObject playerInv;
 
+    public GameObject interaction;
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -50,6 +54,7 @@ public class KeyPickup : MonoBehaviour
             }
             interactText.SetActive(false);
             pickedUpText.SetActive(true);
+            interaction.SetActive(true);
             canInteract = false;
         }
     }

@@ -18,6 +18,8 @@ public class PulleyTracker : MonoBehaviour
     public GameObject keyIn;
     public GameObject plate;
 
+    public GameObject blockedDoor;
+
     private bool canInteract = false;
     public bool hasKey = false;
 
@@ -60,9 +62,9 @@ public class PulleyTracker : MonoBehaviour
             plate.SetActive(true);
             interactText.SetActive(false);
             noKeyText.SetActive(false);
-            animator.SetBool("Pull", true);
-            chain2anim.SetBool("Pull", true);
-            canInteract = false;
+            blockedDoor.SetActive(true);
+            animator.SetTrigger("Pull");
+            chain2anim.SetTrigger("Pull");
             Destroy(gameObject);
         }
 
