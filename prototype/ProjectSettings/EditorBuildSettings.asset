@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Panopticon.unity
     guid: 38e7fa7c4cb687e41a115ca7037ba677
+  - enabled: 1
+    path: Assets/Scenes/FinalLevel.unity
+    guid: 80d574500acdea14fa5227f91dd1db18
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: d06d109607637ff4ebc39c0925db396e
   m_configObjects: {}

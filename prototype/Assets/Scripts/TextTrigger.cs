@@ -5,20 +5,22 @@ using UnityEngine;
 public class TextTrigger : MonoBehaviour
 {
     public GameObject interactText;
+    private bool isTyping = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isTyping)
         {
-            interactText.SetActive(true);
+            StartCoroutine(ShowText());
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private IEnumerator ShowText()
     {
-        if (other.CompareTag("Player"))
-        {
-            Destroy(interactText);
-        }
+        isTyping = true;
+        yield return new WaitForSeconds(1.5f);
+        interactText.SetActive(true);
+        Destroy(gameObject);
     }
+
 }

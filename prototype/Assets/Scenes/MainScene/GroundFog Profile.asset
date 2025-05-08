@@ -29,16 +29,16 @@ MonoBehaviour:
   active: 1
   _FogIntensity:
     m_OverrideState: 1
-    m_Value: 0.025
+    m_Value: 0.046
   _EnergyLoss:
     m_OverrideState: 1
-    m_Value: 0.082
+    m_Value: 0.076
   _UseGradient:
     m_OverrideState: 1
     m_Value: 0
   _FogColor:
     m_OverrideState: 1
-    m_Value: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    m_Value: {r: 0.40606087, g: 0.52144855, b: 0.6886792, a: 1}
   _GradientStart:
     m_OverrideState: 0
     m_Value: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
     m_Value: 3
   _DistanceFogOffset:
     m_OverrideState: 0
-    m_Value: -20
+    m_Value: 10
   _SceneStart:
     m_OverrideState: 0
     m_Value: 10
@@ -104,7 +104,7 @@ MonoBehaviour:
     m_Value: 1
   _Height:
     m_OverrideState: 1
-    m_Value: 11.98
+    m_Value: 7.88
   _HeightDensity:
     m_OverrideState: 1
     m_Value: 0.5

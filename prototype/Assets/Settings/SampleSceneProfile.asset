@@ -132,7 +132,7 @@ MonoBehaviour:
     m_Value: 0
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 900
   enableGround:
     m_OverrideState: 1
     m_Value: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840cc048a5aa61d4cbc01d6073ffb0a0, type: 3}
   m_Name: BetterFogVolume
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   _FogIntensity:
     m_OverrideState: 1
     m_Value: 0.565

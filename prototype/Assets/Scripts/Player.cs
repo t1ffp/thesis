@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public Collider playerCollider;
     public GameObject deadText;
 
+    private bool isDead = false;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -22,13 +24,26 @@ public class Player : MonoBehaviour
     {
         healthBar.SetHealth(currentHealth);
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
-            playerCollider.enabled = false;
-
-            deadText.SetActive(true);
-
+            Die();
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        if (isDead) return;
+
+        currentHealth -= Mathf.RoundToInt(amount);
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+    }
+
+    private void Die()
+    {
+        isDead = true;
+        playerCollider.enabled = false;
+        deadText.SetActive(true);
+        Debug.Log("Player died.");
     }
 
 }

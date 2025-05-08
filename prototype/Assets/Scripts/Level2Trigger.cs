@@ -5,17 +5,15 @@ using Hertzole.GoldPlayer;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 public class Level2Trigger : MonoBehaviour
 {
     public GameObject interactTxt;
     private bool isLooking = false;
 
-    public Transform teleportLocation;
-    public Transform playerPos;
-
     public Transform playerCamera;
-
+    public AudioSource interactAudio;
 
    private void OnTriggerStay(Collider other)
    {
@@ -32,14 +30,7 @@ public class Level2Trigger : MonoBehaviour
             else
             {
                 interactTxt.SetActive(false);
-                //isLooking = false;
-            }
-            if (Input.GetKeyDown(KeyCode.E) && isLooking)
-            {
-                other.GetComponent<CharacterController>().enabled = false;
-                playerPos.position = teleportLocation.position;
-                other.GetComponent<CharacterController>().enabled = true;
-                interactTxt.SetActive(false);
+                isLooking = false;
             }
         }
    }
@@ -48,6 +39,16 @@ public class Level2Trigger : MonoBehaviour
     {
         interactTxt.SetActive(false);
         isLooking = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && isLooking)
+        {
+            interactTxt.SetActive(false);
+            interactAudio.Play();
+            SceneManager.LoadScene("Panopticon");
+        }
     }
 
 }

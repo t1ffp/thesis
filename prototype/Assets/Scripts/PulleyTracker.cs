@@ -25,6 +25,8 @@ public class PulleyTracker : MonoBehaviour
     private bool canInteract = false;
     public bool hasKey = false;
 
+    public AudioSource chainPulley;
+
     private PlayerInventory playerInventory;
 
 
@@ -69,6 +71,7 @@ public class PulleyTracker : MonoBehaviour
             animator.SetTrigger("Pull");
             chain2anim.SetTrigger("Pull");
             lightAnim.SetTrigger("Open");
+            chainPulley.Play();
             Destroy(gameObject);
         }
 
