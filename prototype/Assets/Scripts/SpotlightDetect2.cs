@@ -7,18 +7,23 @@ public class SpotlightDetect2 : MonoBehaviour
 {
     public Transform player;
     public float viewDistance = 20f;
-    public float damagePerSecond = 10f;
+    public float damagePerSecond = 20f;
     public LayerMask obstructionMask;
 
     private Light spotLight;
     private bool playerInSight;
 
     public Animator spotlightAnim;
+    //public Player playerHealth;
+
+    public AudioSource heartBeat;
+    public AudioSource beeping;
 
     void Start()
     {
         spotLight = GetComponent<Light>();
         spotlightAnim = GetComponentInParent<Animator>();
+        //playerHealth = GetComponent<Player>();
     }
 
     void Update()
@@ -46,10 +51,19 @@ public class SpotlightDetect2 : MonoBehaviour
         {
             //Debug.Log("in sight");
             spotlightAnim.enabled = false;
+            //playerHealth.TakeDamage(damagePerSecond * Time.deltaTime);
+
+            if (!heartBeat.isPlaying && !beeping.isPlaying)
+            {
+                heartBeat.Play();
+                beeping.Play();
+            }
         }
         else
         {
             spotlightAnim.enabled = true;
+            heartBeat.Stop();
+            beeping.Stop();
         }
     }
 
