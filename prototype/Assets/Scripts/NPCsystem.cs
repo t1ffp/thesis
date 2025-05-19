@@ -31,6 +31,7 @@ public class NPCsystem : MonoBehaviour
     private bool canSkip = true;
     private float skipCooldown = 0.5f;
 
+
     private void Start()
     {
         interactText.gameObject.SetActive(false);
@@ -105,6 +106,7 @@ public class NPCsystem : MonoBehaviour
         DialogueAnimator.SetTrigger("Enter");
         startDialogue = false;
         LockPlayer(true);
+        Time.timeScale = 0f;
         NextSentence();
     }
 
@@ -115,6 +117,8 @@ public class NPCsystem : MonoBehaviour
         Index = 0;
         startDialogue = true;
         LockPlayer(false);
+
+        Time.timeScale = 1f;
     }
 
     void NextSentence()
@@ -148,7 +152,7 @@ public class NPCsystem : MonoBehaviour
         foreach (char Character in sentence.ToCharArray())
         {
             DialogueText.text += Character;
-            yield return new WaitForSeconds(dialogueSpeed);
+            yield return new WaitForSecondsRealtime(dialogueSpeed);
         }
 
         isTyping = false;

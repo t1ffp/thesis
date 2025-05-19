@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public float currentHealth;
 
-    public HealthBar healthBar;
+    //public HealthBar healthBar;
 
     public Collider playerCollider;
     public GameObject deadText;
@@ -26,12 +26,12 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxhealth(maxHealth);
+        //healthBar.SetMaxhealth(maxHealth);
     }
 
     void Update()
     {
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0 && !isDead)
         {
